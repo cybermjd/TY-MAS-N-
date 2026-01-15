@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azərbaycan Toy Maşınları</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        .car-card {
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .car-image {
+            height: 200px;
+            background-size: cover; 
+            background-position: center; 
+        }
+
+        .car-info {
+            padding: 15px;
+        }
+
+        .car-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .car-info p {
+            margin: 5px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e91e63;
+        }
+
+        .car-info button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #111;
+            color: #fff;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .car-info button:hover {
+            background-color: #e91e63;
+        }
+
+        /* Sadə iki kart yan-yana */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* kartlar arası boşluq */
+        }
+
+        .car-card {
+            flex: 1 1 48%; /* iki kart yan-yana, genişlik ~48% */
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Azərbaycan Toy Maşınları</h1>
+</header>
+
+<div class="container">
+    <div class="row">
+
+        <!-- Maşın 1 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2017/08/06/05/27/mercedes-2594108_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>Mercedes S-Class</h3>
+                <p>Model ili: 2021</p>
+                <p class="price">Qiymət: 250 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+
+        <!-- Maşın 2 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2017/09/02/13/55/bmw-2702960_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>BMW Z4</h3>
+                <p>Model ili: 2020</p>
+                <p class="price">Qiymət: 235 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+        <!-- Maşın 3 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2017/09/02/13/55/bmw-2702960_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>BMW Z4</h3>
+                <p>Model ili: 2020</p>
+                <p class="price">Qiymət: 235 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+        <!-- Maşın 4 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2017/09/02/13/55/bmw-2702960_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>BMW Z4</h3>
+                <p>Model ili: 2020</p>
+                <p class="price">Qiymət: 235 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+        <!-- Maşın 5 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2017/09/02/13/55/bmw-2702960_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>BMW Z4</h3>
+                <p>Model ili: 2020</p>
+                <p class="price">Qiymət: 235 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+
+        <!-- Maşın 6 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/18/17/02/bentley-1838656_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>Bentley Continental</h3>
+                <p>Model ili: 2018</p>
+                <p class="price">Qiymət: 350 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+
+        <!-- Maşın 7 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2018/01/15/07/51/luxury-3081970_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>Rolls-Royce Phantom</h3>
+                <p>Model ili: 2022</p>
+                <p class="price">Qiymət: 1000 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+
+    </div>
+        <!-- Maşın 8 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2018/01/15/07/51/luxury-3081970_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>Rolls-Royce Phantom</h3>
+                <p>Model ili: 2022</p>
+                <p class="price">Qiymət: 1000 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+
+    </div>
+        <!-- Maşın 9 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2018/01/15/07/51/luxury-3081970_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>Rolls-Royce Phantom</h3>
+                <p>Model ili: 2022</p>
+                <p class="price">Qiymət: 1000 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+
+    </div>
+        <!-- Maşın 10 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2018/01/15/07/51/luxury-3081970_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>Rolls-Royce Phantom</h3>
+                <p>Model ili: 2022</p>
+                <p class="price">Qiymət: 1000 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+
+    </div>
+        <!-- Maşın 11 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2018/01/15/07/51/luxury-3081970_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>Rolls-Royce Phantom</h3>
+                <p>Model ili: 2022</p>
+                <p class="price">Qiymət: 1000 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+
+    </div>
+        <!-- Maşın 12 -->
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('https://cdn.pixabay.com/photo/2018/01/15/07/51/luxury-3081970_1280.jpg');"></div>
+            <div class="car-info">
+                <h3>Rolls-Royce Phantom</h3>
+                <p>Model ili: 2022</p>
+                <p class="price">Qiymət: 1000 AZN/gün</p>
+                <button>Sifariş et</button>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
